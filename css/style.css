@@ -9,6 +9,7 @@ Primary style
 
 html {
   font-size: 62.5%;
+  font-family: 'Muli', sans-serif;
 }
 
 body {
@@ -592,7 +593,7 @@ li.selected .cd-project-title,
   /* rest button default style */
   cursor: pointer;
   border: none;
-  background: url("../img/cd-icon-arrow.svg") no-repeat center center;
+  background: url("/imgs/cd-icon-arrow.svg") no-repeat center center;
   visibility: hidden;
   -webkit-transform: translateX(-50%) scale(0);
   -moz-transform: translateX(-50%) scale(0);
