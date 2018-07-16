@@ -785,3 +785,229 @@ JavaScript Disabled
 .no-js .cd-primary-nav li:not(.cd-label) {
   display: inline-block;
 }
+  
+/************** IMAGE GALLERY **************/
+
+  .gallery {
+    width: 50%px;
+    margin: 25%;
+    padding: 5px;
+    margin-top: 0%;
+    padding-bottom: 100%;
+  }
+  
+  .gallery > div {
+    position: relative;
+    float: right;
+    padding: .5%;
+  }
+  
+  .gallery > div > img {
+    display: block;
+    width: 200px;
+    transition: .1s transform;
+    transform: translateZ(0);
+  }
+  
+  .gallery > div:hover {
+    z-index: 1;
+  }
+  
+  .gallery > div:hover > img {
+    transform: scale(1.7,1.7);
+    transition: .3s transform;
+  }
+  
+  .cf:before, .cf:after {
+    display: table;
+    content: "";
+    line-height: 0;
+  }
+  
+  .cf:after {
+    clear: both;
+  }
+
+  /************** VIDEOS **************/
+
+  .grid{
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(12, 1fr); 
+    grid-template-rows: repeat(18, 100px);
+  }
+
+  .shark{
+    grid-area: 1 / 2 / span 1 / span 10;
+  }
+
+  .rays{
+    grid-area: 7 / 2 / span 1 / span 5;
+  }
+
+  .turtle1{
+    grid-area: 7 / 7 / span 1 / span 5;
+  }
+
+  .turtle2{
+    grid-area: 10 / 2 / span 1 / span 5;
+  }
+
+  .turtle3{
+    grid-area: 10 / 7 / span 1 / span 5;
+  }
+
+  .shark2{
+    grid-area: 13 / 2 / span 1 / span 10;
+  }
+
+/************** TRAVEL BLOG **************/
+
+.grid2{
+  display: grid;
+  grid-gap: 2px;
+  grid-auto-rows: minmax(200px, auto);
+  grid-template-areas: 
+      "a a a b b b b b "
+      "a a a b b b b b "
+      "a a a d d d c c "
+      "e e e e f f c c "
+      "e e e e f f g g "
+}
+
+h1{
+  padding: 10px;
+  font-size: 50px;
+  color: black;
+}
+
+.bali{
+  grid-area: a;
+  background-image: url(/imgs/travel/bali.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.phillip{
+  grid-area: b;
+  background-image: url(/imgs/travel/phillip-island.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.grampians{
+  grid-area: c;
+  background-image: url(/imgs/travel/cliff.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.tassie{
+  grid-area: d;
+  background-image: url(/imgs/travel/tasmania.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.nimbin{
+  grid-area: e;
+  background-image: url(/imgs/travel/nimbin.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.mallorca{
+  grid-area: f;
+  background-image: url(/imgs/travel/mallorca.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.saladita{
+  grid-area: g;
+  background-image: url(/imgs/travel/saladita.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/************** BUCKET LIST **************/
+
+.grid3{
+  display: grid;
+  grid-gap: 2px;
+  grid-auto-rows: minmax(150px, auto);
+  grid-template-areas: 
+      "a a a b b b c c "
+      "a a a b b b c c "
+      "e e e b b b d d "
+      "e e e f f f d d "
+      "g g g g g g d d "
+}
+
+h2{
+  padding: 10px;
+  font-size: 50px;
+  color: rgb(255, 255, 255);
+}
+.bhutan{
+  grid-area: a;
+  background-image: url(/imgs/bucket/bhutan.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hawaii{
+  grid-area: b;
+  background-image: url(/imgs/bucket/hawaii.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.lanka{
+  grid-area: c;
+  background-image: url(/imgs/bucket/sri-lanka.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.thai{
+  grid-area: d;
+  background-image: url(/imgs/bucket/thailand.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.india{
+  grid-area: e;
+  background-image: url(/imgs/bucket/india.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.croatia{
+  grid-area: f;
+  background-image: url(/imgs/bucket/croatia.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.vietnam{
+  grid-area: g;
+  background-image: url(/imgs/bucket/vietnam.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
